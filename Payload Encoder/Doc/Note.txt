@@ -1,0 +1,3 @@
+Note: Most of the content in this documentation has been presented in tabular format to ensure easy readability and fast understanding of each module, method, and result.
+
+Tables were preferred over long paragraphs as they allow quick comparison between techniques, making it easier to evaluate encoding methods, evasion results, and module details at a glance.

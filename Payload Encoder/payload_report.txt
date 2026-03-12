@@ -1,0 +1,28 @@
+==================================================
+   PAYLOAD ENCODER & OBFUSCATION REPORT
+==================================================
+  Date    : 2026-03-12 12:39:17
+  Total Tests : 1
+
+  --- Test 1 ---
+  Payload    : cat /etc/passwd
+  Method     : base64
+  Encoded    : Y2F0IC9ldGMvcGFzc3dk...
+  Original Detected  : False
+  Obfuscated Detected: False
+  Result     : CAUGHT
+
+==================================================
+  SUMMARY
+==================================================
+  Total payloads tested : 1
+  Successfully evaded   : 0
+  Caught                : 1
+  Evasion rate          : 0%
+
+  Recommendations:
+  - Use multi-layer encoding for better evasion
+  - Static signatures alone are not enough
+  - Combine behavioral + signature detection
+  - Update signature databases regularly
+==================================================

