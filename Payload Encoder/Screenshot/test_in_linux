@@ -1,0 +1,85 @@
+┌──(root㉿kali)-[/home/kali/Desktop/Project_Payload_Encode]
+└─# python3 main.py
+
+=============================================
+   PAYLOAD ENCODER & OBFUSCATION FRAMEWORK
+=============================================
+
+  Enter payload to test : cat \etc\passwd
+
+=============================================
+  Select encryption type:
+  1. Encoding  (Base64 / XOR / ROT13)
+  2. Obfuscation  (Hex / Reverse / Toggle / Insert)
+=============================================
+  Enter choice (1 or 2): 2
+
+[STEP 1] Obfuscating Payload...
+
+=============================================
+   MODULE 2 — OBFUSCATOR
+=============================================
+  Select obfuscation method:
+  1. Hex Escape
+  2. Reverse
+  3. Case Toggle
+  4. Random Insert
+=============================================
+  Enter choice (1-4): 2
+
+=============================================
+   MODULE 2 — OBFUSCATOR
+=============================================
+  Method  : reverse
+  Original: cat \etc\passwd
+  Obfuscated: dwssap\cte\ tac
+=============================================
+
+[STEP 2] Running Evasion Test...
+
+=============================================
+   MODULE 3 — EVASION TESTER
+=============================================
+
+  [Original Payload]
+  Payload   : cat \etc\passwd
+  Status    : Not detected
+
+  [Obfuscated Payload]
+  Payload   : dwssap\cte\ tac...
+  Status    : EVADED detection!
+
+  [Evasion Result]
+  Original was not detected either.
+=============================================
+
+[STEP 3] Generating Report...
+==================================================
+   PAYLOAD ENCODER & OBFUSCATION REPORT
+==================================================
+  Date    : 2026-03-13 05:09:22
+  Total Tests : 1
+
+  --- Test 1 ---
+  Payload    : cat \etc\passwd
+  Method     : reverse
+  Encoded    : dwssap\cte\ tac...
+  Original Detected  : False
+  Obfuscated Detected: False
+  Result     : CAUGHT
+
+==================================================
+  SUMMARY
+==================================================
+  Total payloads tested : 1
+  Successfully evaded   : 0
+  Caught                : 1
+  Evasion rate          : 0%
+
+  Recommendations:
+  - Use multi-layer encoding for better evasion
+  - Static signatures alone are not enough
+  - Combine behavioral + signature detection
+  - Update signature databases regularly
+==================================================
+  Report saved to: payload_report.txt
